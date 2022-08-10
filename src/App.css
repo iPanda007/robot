@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
 .App {
   text-align: center;
 }
 
+
 .App-logo {
-  height: 40vmin;
+  height: 30vmin;
   pointer-events: none;
 }
 
@@ -36,3 +38,264 @@
     transform: rotate(360deg);
   }
 }
+html{
+
+}
+
+.appContainer{
+  font-size:17px ;
+  font-family: 'Poppins', sans-serif;
+
+color: #adb5bd;
+
+}
+.bgColor{
+  background: #010010;
+
+}
+.banner-img{
+  width: 620px;
+}
+.header-title{
+  text-transform: capitalize;
+}
+.header-para{
+ letter-spacing: 2px;
+line-height: 30px;
+}
+.neonBtn{
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #2196f3;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-size: 24px;
+  background: none;
+  border: none;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.neonBtn:hover{
+  color: #255784;
+  background: #2196f3;
+  box-shadow: 0 0 20px #2196f3, 0 0 50px #2196f3, 0 0 100px #2196f3;
+
+}
+.neonBtn span{
+  position: absolute;
+  display: block;
+}
+.neonBtn span:nth-child(1){
+  top: 0;
+  left:-100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+}
+
+.neonBtn span:nth-child(1){
+  top: 0;
+  left:-100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg,transparent,#2196f3);
+  animation: animate1 1s linear infinite;
+}
+
+.neonBtn span:nth-child(3){
+  bottom: 0;
+  right:-100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg,transparent,#2196f3);
+  animation: animate3 1s linear infinite;
+
+}
+
+.neonBtn span:nth-child(2){
+  top: -100%;
+  right:0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg,transparent,#2196f3);
+  animation: animate2 1s linear infinite;
+
+}
+
+.neonBtn span:nth-child(4){
+  bottom: -100%;
+  left:0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg,transparent,#2196f3);
+  animation: animate4 1s linear infinite;
+
+}
+@keyframes animate1 {
+0%{
+   left: -100%;
+}
+  50%,100%{
+    left: 100%;
+  }
+}
+@keyframes animate2 {
+  0%{
+    top: -100%;
+  }
+  50%,100%{
+    top: 100%;
+  }
+}
+@keyframes animate3 {
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+   right: 100%;
+  }
+}
+@keyframes animate3 {
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+    right: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0%{
+    bottom: -100%;
+  }
+  50%,100%{
+    bottom: 100%;
+  }
+}
+.card-text-box{
+
+}
+.card-img-box{
+  margin-top: -100px;
+  text-align: right;
+}
+.img-item{
+  width: 70%;
+
+}
+.cardBtn{
+  border: none;
+  padding: 10px 20px;
+  color: #255784;
+  background: #2196f3;
+  box-shadow:0 0 15px #2196f3,0 0 50px #2196f3,0 0 100px #2196f3 ;
+  font-size: 20px;
+  letter-spacing: 3px;
+font-weight: 600;
+  cursor: pointer;
+}
+.cardBtn:hover{
+  background: #6ec6ff;
+  box-shadow:0 0 50px #6ec6ff,0 0 100px #6ec6ff,0 0 200px #6ec6ff ;
+  transition: 0.5s;
+}
+.etBg{
+  background-image: url("../public/assets/log-in-girl.svg");
+  background-size:50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 690px 20px;
+
+
+}
+.robot-img-box{
+  margin-top: -60px;
+  text-align: right;
+}
+.card{
+  padding: 0;
+}
+.card-box{
+  height: 400px;
+}
+.neonText{
+  font-weight: 600;
+  text-shadow:  0 0 15px #2196f3,0 0 50px #2196f3,0 0 100px #2196f3;
+  color: #2196f3;
+  font-size: 22px;
+}
+.neonText:hover{
+  transition: 0.3s;
+  text-shadow:0 0 15px #6ec6ff,0 0 50px #6ec6ff,0 0 100px #6ec6ff;
+  color: #6ec6ff;
+}
+.cardBtnOne{
+  color:#255784 ;
+  padding: 8px 20px;
+  border-radius: 10px ;
+  font-weight: 600;
+  box-shadow:0 0 15px #2196f3,0 0 50px #2196f3,0 0 100px #2196f3 ;
+  background: #2196f3;
+}
+.cardBtnOne:hover{
+  background: #6ec6ff;
+  text-decoration: none;
+  box-shadow:0 0 50px #6ec6ff,0 0 100px #6ec6ff,0 0 200px #6ec6ff ;
+  transition: 0.3s;
+
+}
+.nav-link{
+  color: #adb5bd;
+}
+.nav-item .nav-link.active{
+  padding: 8px 15px ;
+  background:#2196f3 ;
+  box-shadow:0 0 15px #2196f3,0 0 50px #2196f3,0 0 100px #2196f3 ;
+  color: #255784;
+}
+.nav-item:hover .nav-link{
+  text-shadow:  0 0 15px #2196f3,0 0 50px #2196f3,0 0 100px #2196f3;
+  transition:0.8s;
+  cursor: pointer;
+  color : #2196f3;
+}
+.nav-item:hover .nav-link.active{
+    color: #255784;
+    text-shadow: none;
+}
+
+.robot-img-box img{
+   animation: animateRob 14s linear infinite;
+}
+
+@keyframes animateRob {
+   0%{
+     transform: scale(0) rotate(-270deg) ;
+   }40%{
+           transform: scale(1.05) rotate(-360deg);
+       }
+
+70%{
+    transform: scale(0.5) rotate(270deg);
+  }
+  100%{
+    transform: scale(0) rotate(360deg);
+  }
+}
+.footerBar{
+  text-align: center;
+  padding: 40px 0;
+  margin-bottom: 0;
+  z-index: -1;
+  position: relative;
+}
+@media screen and (max-width:780px ){
+         .etBg{
+           background-position: center;
+           background-size: cover;
+         }
+}
+
+
+
